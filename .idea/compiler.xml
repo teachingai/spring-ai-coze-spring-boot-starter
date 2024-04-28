@@ -6,13 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring-ai-core-spring-boot-starter" />
+        <module name="spring-ai-coze-spring-boot-starter" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="spring-ai-core-spring-boot-starter" options="-parameters" />
+      <module name="spring-ai-coze-spring-boot-starter" options="-parameters" />
     </option>
   </component>
 </project>
