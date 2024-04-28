@@ -11,6 +11,7 @@ import org.springframework.ai.model.function.FunctionCallback;
 import org.springframework.ai.model.function.FunctionCallingOptions;
 import org.springframework.boot.context.properties.NestedConfigurationProperty;
 
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -50,10 +51,22 @@ public class CozeAiChatOptions implements FunctionCallingOptions, ChatOptions {
     @JsonProperty(value = "user_id")
     private String user;
     /**
+     * 终端用户的唯一ID，协助平台对终端用户的违规行为、生成违法及不良信息或其他滥用行为进行干预。ID长度要求：最少6个字符，最多128个字符。
+     */
+    @JsonProperty(value = "bot_id")
+    private String botId;
+    @JsonProperty(value = "conversation_id")
+    private String conversationId;
+    /**
      * 模型在遇到stop所制定的字符时将停止生成，目前仅支持单个停止词，格式为["stop_word1"]
      */
     @JsonProperty("stop")
     private List<String> stop;
+    /**
+     * Bot 中定义的变量信息。key 是变量名，value 是变量值。
+     */
+    @JsonProperty("custom_variables")
+    private Map<String, Object> variables = new LinkedHashMap<>();
 
     /**
      * 所要调用的模型编码
