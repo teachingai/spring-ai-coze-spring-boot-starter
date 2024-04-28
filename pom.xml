@@ -10,7 +10,7 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 
-	<groupId>com.github.hiwepy</groupId>
+	<groupId>com.github.teachingai</groupId>
 	<artifactId>spring-ai-coze-spring-boot-starter</artifactId>
 	<description>Spring Boot Starter For Spring AI Implementation Base On Coze AI</description>
 	<version>1.0.0-SNAPSHOT</version>
@@ -32,10 +32,24 @@
 		<tag>${project.artifactId}</tag>
 	</scm>
 
+	<organization>
+		<name>TeachingAI</name>
+		<url>https:github.com/teachingai</url>
+	</organization>
+
 	<developers>
 		<developer>
 			<name>wandl</name>
-			<email>hiwepy@gmail.com</email>
+			<email>hiwepy@gamil.com</email>
+			<roles>
+				<role>manager</role>
+				<role>developer</role>
+			</roles>
+			<timezone>+8</timezone>
+		</developer>
+		<developer>
+			<name>Sanmu2717</name>
+			<email>assureee@gmail.com</email>
 			<roles>
 				<role>developer</role>
 			</roles>
